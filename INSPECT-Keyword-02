@@ -1,0 +1,23 @@
+ IDENTIFICATION DIVISION.                                                         
+   PROGRAM-ID. TestPgm1.                                                          
+   AUTHOR. Tech Sharmit.                                                          
+                                                                                  
+*************************************************************************         
+*                    Replace all occurrences of a character             *         
+*************************************************************************         
+                                                                                  
+ DATA DIVISION.                                                                   
+                                                                                  
+ WORKING-STORAGE SECTION.                                                         
+ 01 Str   PIC X(40) VALUE 'tHE tECh ShARMIT PODCAST'.                             
+                                                                                  
+ PROCEDURE DIVISION.                                                              
+                                                                                  
+ DISPLAY 'Str before replacing characters  : ' Str.                               
+                                                                                  
+ INSPECT Str REPLACING ALL 't' BY 'T'                                             
+                       ALL 'h' BY 'H'.        
+
+ DISPLAY 'Str after replacing characters  : ' Str.     
+                                                       
+ STOP RUN.                                             
