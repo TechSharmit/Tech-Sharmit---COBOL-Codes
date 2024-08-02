@@ -1,0 +1,32 @@
+ IDENTIFICATION DIVISION.                                                                    
+   PROGRAM-ID. TestPgm1.                                                                     
+   AUTHOR. Tech Sharmit.                                                                     
+                                                                                             
+*************************************************************************                    
+*                       Accepting User Input                            *                    
+*************************************************************************                    
+                                                                                             
+ DATA DIVISION.                                                                              
+                                                                                             
+  WORKING-STORAGE SECTION.                                                                   
+  01 Username PIC X(40).                                                                     
+  01 Pwd      PIC 9(10).                                                                     
+                                                                                             
+  PROCEDURE DIVISION.                                                                        
+                                                                                             
+  DISPLAY 'Enter Username:.                                                                  
+                                                                                             
+  ACCEPT Username.        
+
+  DISPLAY 'Enter Pwd     :'.                                
+                                                           
+  ACCEPT Pwd.                                               
+                                                            
+  DISPLAY 'Username entered by User : ' Username.           
+                                                           
+  DISPLAY 'Password entered by User : ' Pwd.                
+                                                           
+                                                           
+                                                           
+  STOP RUN.                                                 
+                                                           
