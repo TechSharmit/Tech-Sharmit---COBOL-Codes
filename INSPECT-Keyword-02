@@ -3,7 +3,7 @@
    AUTHOR. Tech Sharmit.                                                          
                                                                                   
 *************************************************************************         
-*                    Replace all occurrences of a character             *         
+*      Replace multiple characters with different characters            *         
 *************************************************************************         
                                                                                   
  DATA DIVISION.                                                                   
