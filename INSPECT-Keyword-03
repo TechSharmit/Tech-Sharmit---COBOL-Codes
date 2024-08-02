@@ -1,0 +1,24 @@
+ IDENTIFICATION DIVISION.                                                     
+   PROGRAM-ID. TestPgm1.                                                      
+   AUTHOR. Tech Sharmit.                                                      
+                                                                              
+*************************************************************************     
+*                    Convert lowercase to uppercase                     *     
+*************************************************************************     
+                                                                              
+ DATA DIVISION.                                                               
+                                                                              
+ WORKING-STORAGE SECTION.                                                     
+ 01 STR  PIC X(40) VALUE 'shaRMIT'.                                           
+                                                                              
+ PROCEDURE DIVISION.                                                          
+                                                                              
+ DISPLAY 'Input String: ' STR.                                                
+                                                                              
+ INSPECT STR  CONVERTING 'abcdefghijklmnopqrstuvwxyz'                         
+              TO 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.                                
+  DISPLAY 'Uppercase String: ' STR.     
+                                        
+  DISPLAY 'String is converted now'.    
+                                        
+  STOP RUN.                             
