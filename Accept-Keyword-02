@@ -1,0 +1,25 @@
+ IDENTIFICATION DIVISION.                                                 
+   PROGRAM-ID. TestPgm1.                                                  
+   AUTHOR. Tech Sharmit.                                                  
+                                                                          
+********************************************************************************************************************************1 
+*                       Accepting System Date and Time     
+*   Please do subscribe Tech Sharmit Youtube Channel : https://youtube.com/@techsharmit?feature=shared for more such sessions.
+******************************************************************************************************************************** 
+                                                                          
+ DATA DIVISION.                                                           
+                                                                          
+ WORKING-STORAGE SECTION.                                                 
+ 01 SystemDate  PIC X(8).                                                 
+ 01 SystemTime  PIC X(8).                                                 
+                                                                          
+ PROCEDURE DIVISION.                                                      
+                                                                          
+ ACCEPT SystemDate  FROM DATE YYYYMMDD.                                   
+                                                                          
+ DISPLAY 'System Date  : ' SystemDate.       
+ ACCEPT SystemTime  FROM TIME.               
+                                             
+ DISPLAY 'System Time  : ' SystemTime.       
+                                             
+ STOP RUN.                                   
