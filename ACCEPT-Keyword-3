@@ -1,0 +1,20 @@
+ IDENTIFICATION DIVISION.                                                
+   PROGRAM-ID. TestPgm1.                                                 
+   AUTHOR. Tech Sharmit.                                                 
+                                                                         
+*************************************************************************
+*                     Accepting System Day of the Week                  *
+*************************************************************************
+                                                                         
+ DATA DIVISION.                                                          
+                                                                         
+ WORKING-STORAGE SECTION.                                                
+ 01 SystemDay   PIC 9(1).                                                
+                                                                         
+ PROCEDURE DIVISION.                                                     
+                                                                         
+ ACCEPT SystemDay FROM DAY.                                              
+                                                                         
+ DISPLAY 'System Day   : ' SystemDay.        
+ 
+ STOP RUN. 
