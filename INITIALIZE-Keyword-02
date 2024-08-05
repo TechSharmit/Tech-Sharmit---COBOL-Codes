@@ -1,0 +1,24 @@
+    IDENTIFICATION DIVISION.                                                          
+      PROGRAM-ID. TestPgm1.                                                           
+      AUTHOR. Tech Sharmit.                                                           
+                                                                                      
+   *************************************************************************          
+   *                Data Item Initialization WITH REPLACING                *          
+   *************************************************************************          
+                                                                                      
+    DATA DIVISION.                                                                    
+                                                                                      
+    WORKING-STORAGE SECTION.                                                          
+      01 Userid PIC 9(2).                                                             
+                                                                                      
+     PROCEDURE DIVISION.                                                              
+         DISPLAY "Before INITIALIZE:"                                                 
+         DISPLAY "UserId: " UserId.                                                   
+                                                                                      
+         INITIALIZE UserId REPLACING NUMERIC BY 5.    
+         DISPLAY "After INITIALIZE:"               
+         DISPLAY "UserId: " UserId.                
+                                               
+                                               
+         STOP RUN.                                 
+                                               
