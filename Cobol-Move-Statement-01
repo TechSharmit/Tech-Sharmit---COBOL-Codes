@@ -1,0 +1,41 @@
+    IDENTIFICATION DIVISION.                                                     
+      PROGRAM-ID. TestPgm1.                                                      
+      AUTHOR. Tech Sharmit.                  
+      Plesae do subscribe Tech Sharmit Youtube Channel for more sessions and code  : https://youtube.com/@techsharmit?feature=shared
+                                                                                 
+   *************************************************************************     
+   *                     MOVE statement in COBOL                           *     
+   *************************************************************************     
+                                                                                 
+    DATA DIVISION.                                                               
+                                                                                 
+    WORKING-STORAGE SECTION.                                                     
+      01 Username PIC X(20).                                                     
+      01 Userid PIC 9(2).                                                        
+      01 New-Username PIC X(20).                                                 
+                                                                                 
+     PROCEDURE DIVISION.                                                         
+                                                                                 
+                                                                                 
+   *  Move a literal to a data item:                                       *     
+                                                                               
+    Move "Sharmit" to Username.                                                
+                                                                               
+    Display Username.                                                          
+                                                                               
+  *  Move a numeric literal to a numeric data item                        *    
+                                                                               
+    Move 123 to Userid.                                                        
+                                                                               
+    Display Userid.                                                            
+                                                                               
+                                                                               
+  *  Move a value from one data item to another                           *    
+                                                                               
+    Move Username to New-UserName.                                             
+                                                                               
+    Display New-Username.                                                      
+
+             
+ STOP RUN.   
+             
