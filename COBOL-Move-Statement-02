@@ -1,0 +1,30 @@
+ IDENTIFICATION DIVISION.                                                      
+   PROGRAM-ID. TestPgm1.                                                       
+   AUTHOR. Tech Sharmit.                                                       
+                                                                               
+*************************************************************************      
+*                     Move with Different Lengths                       *      
+*************************************************************************      
+                                                                               
+ DATA DIVISION.                                                                
+                                                                               
+ WORKING-STORAGE SECTION.                                                      
+   01 Username PIC X(10).                                                      
+                                                                               
+  PROCEDURE DIVISION.                                                          
+                                                                               
+                                                                               
+*  Move a shorter string to a longer field (padding with spaces)        *      
+                                                                               
+  Move "Sharmit" to Username.                                                  
+   Display Username.                                             
+                                                                 
+ *  Move a longer string to a shorter field (truncation)         
+                                                                 
+   Move "The Tech Sharmit Podcast" to Username.                  
+                                                                 
+   Display Username.                                             
+                                                                 
+                                                                 
+   STOP RUN.                                                     
+                                                                 
