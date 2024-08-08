@@ -1,0 +1,42 @@
+ IDENTIFICATION DIVISION.                                                                   
+   PROGRAM-ID. TestPgm1.                                                                    
+   AUTHOR. Tech Sharmit.                                                                    
+                                                                                            
+*************************************************************************                   
+*                           Special Moves                               *                   
+*************************************************************************                   
+                                                                                            
+ DATA DIVISION.                                                                             
+                                                                                            
+ WORKING-STORAGE SECTION.                                                                   
+   01 Username PIC X(10) Value "Test".                                                      
+   01 Userid   PIC 9(2)  value 50.                                                          
+                                                                                            
+  PROCEDURE DIVISION.                                                                       
+                                                                                            
+   Display Username.                                                                        
+                                                                                            
+*  Move ALL '*'                                                         *                   
+                                                                               
+   MOVE ALL '*' TO USERNAME.                                                   
+                                                                               
+   Display Username.                                                           
+                                                                               
+   Display Userid.                                                             
+                                                                               
+*  MOVE ZERO                                                            *      
+                                                                               
+   MOVE ZERO TO Userid.                                                        
+                                                                               
+   Display Userid.                                                             
+                                                                               
+   Display Username.                                                           
+                                                                               
+*  MOVE SPACES                                                          *      
+                                                                               
+   MOVE SPACES TO Username.                                                    
+
+                            
+   Display Username.        
+                            
+  STOP RUN.                 
