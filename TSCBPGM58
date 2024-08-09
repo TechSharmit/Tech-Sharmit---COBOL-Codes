@@ -1,0 +1,36 @@
+     IDENTIFICATION DIVISION.                                                 
+       PROGRAM-ID. TestPgm1.                                                  
+       AUTHOR. Tech Sharmit.                                                  
+                                                                              
+    ************************************************************************* 
+    *                           Special Moves                               * 
+    ************************************************************************* 
+                                                                              
+     DATA DIVISION.                                                           
+                                                                              
+     WORKING-STORAGE SECTION.                                                 
+       01 Username PIC X(10) value "Test".                                    
+       01 Userid   PIC 9(2)  value 50.                                        
+                                                                              
+      PROCEDURE DIVISION.                                                     
+                                                                              
+       Display Username.                                                      
+                                                                              
+    *  MOVE HIGH-VALUE                                                      * 
+                                                                                 
+        MOVE HIGH-VALUE TO USERNAME.                                             
+                                                                                 
+        Display Username.                                                        
+                                                                                 
+        Display Userid.                                                          
+                                                                                 
+     *  MOVE LOW-VALUE                                                       *   
+                                                                                 
+        MOVE LOW-VALUE TO Userid.                                                
+                                                                                 
+        Display Userid.                                                          
+                                                                                 
+                                                                                 
+                                                                                 
+       STOP RUN.                                                                 
+                                                                                 
