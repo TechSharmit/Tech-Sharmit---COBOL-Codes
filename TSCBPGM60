@@ -1,0 +1,37 @@
+ IDENTIFICATION DIVISION.                                                  
+   PROGRAM-ID. TestPgm1.                                                   
+   AUTHOR. Tech Sharmit.                                                   
+                                                                           
+*************************************************************************  
+*                          ADD statement in COBOL                       *  
+*************************************************************************  
+                                                                           
+ DATA DIVISION.                                                            
+                                                                           
+ WORKING-STORAGE SECTION.                                                  
+   01 Profit1  PIC 9(4)  value 50.                                         
+   01 Profit2  PIC 9(4)  value 50.                                         
+   01 Result   PIC 9(4).                                                   
+                                                                           
+  PROCEDURE DIVISION.                                                      
+                                                                           
+   Display 'Profit1 value before any modification ' Profit1.               
+   Display 'Profit2 value before any modification ' Profit2.               
+      Display 'Result  value before any modification ' Result.                     
+                                                                                   
+   *  Addition with a Result Variable                                      *       
+                                                                                   
+      ADD 5 To Profit1 Giving Result.                                              
+                                                                                   
+      Display 'Profit1 + 5 = Result ' Result.                                      
+                                                                                   
+                                                                                   
+   *   Adding Multiple Values                                              *       
+                                                                                   
+      ADD Profit1  Profit2 100 Giving Result.                                      
+                                                                                   
+      Display 'Profit2 value after Profit1 is added ' Result.                      
+                                                                                   
+                                                                                   
+                                                                                   
+     STOP RUN.                                                                     
