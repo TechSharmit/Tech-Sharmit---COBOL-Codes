@@ -30,7 +30,7 @@
                                                                                    
       ADD Profit1  Profit2 100 Giving Result.                                      
                                                                                    
-      Display 'Profit2 value after Profit1 is added ' Result.                      
+  Display 'Profit1 + Profit2 + 100 = ' Result.                          
                                                                                    
                                                                                    
                                                                                    
