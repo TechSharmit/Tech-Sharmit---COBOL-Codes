@@ -1,0 +1,26 @@
+  IDENTIFICATION DIVISION.                                                
+    PROGRAM-ID. TestPgm.                                                  
+    AUTHOR. Tech Sharmit.                                                 
+                                                                          
+ *************************************************************************
+ *                            Add    Statement                           *
+ *************************************************************************
+                                                                          
+  Data Division.                                                          
+                                                                          
+  Working-Storage Section.                                                
+  01 Num1   Pic 99V99 Value 03.75.                                        
+  01 Num2   Pic 99V99 Value 02.45.                                        
+  01 Result Pic 99V9.                                                     
+                                                                          
+  PROCEDURE DIVISION.                                                     
+                                                                          
+  Add Num1 to Num2 Giving  result.             
+
+   Display result.                              
+                                                
+   Add Num1 to Num2 Rounded  result.            
+   Display result.                              
+                                                
+   stop Run.                                    
+                                                                          
