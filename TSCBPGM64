@@ -1,0 +1,31 @@
+   IDENTIFICATION DIVISION.                                                                 
+     PROGRAM-ID. TestPgm1.                                                                  
+     AUTHOR. Tech Sharmit.                                                                  
+                                                                                            
+  *************************************************************************                 
+  *                           SUBTRACT  Statement                         *                 
+  *************************************************************************                 
+                                                                                            
+  DATA DIVISION.                                                                            
+                                                                                            
+    WORKING-STORAGE SECTION.                                                                
+      01 Profit1  PIC 9(4)  value 50.                                                       
+      01 Profit2  PIC 9(4)  value 50.                                                       
+      01 Profit3  PIC 9(4)  value 60.                                                       
+                                                                                            
+     PROCEDURE DIVISION.                                                                    
+                                                                                            
+      Display 'Profit1 value before any modification ' Profit1.                             
+          Display 'Profit2 value before any modification ' Profit2.            
+          Display 'Profit3 value before any modification ' Profit3.            
+                                                                               
+          Subtract Profit1 from Profit2 Profit3.                               
+                                                                               
+          Display 'Profit2 Value after Profit1 is subtracted : ' Profit2.      
+                                                                               
+          Display 'Profit3 Value after Profit1 is subtracted : ' Profit3.      
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+       Stop Run.                                                               
