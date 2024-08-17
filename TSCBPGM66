@@ -1,0 +1,31 @@
+IDENTIFICATION DIVISION.                                                    
+  PROGRAM-ID. TestPgm1.                                                     
+  AUTHOR. Tech Sharmit.                                                     
+                                                                            
+************************************************************************    
+ Subtract multiple values and store the result in a different variable.*    
+************************************************************************    
+                                                                            
+ATA DIVISION.                                                               
+                                                                            
+ WORKING-STORAGE SECTION.                                                   
+   01 Profit1  PIC 9(4)  value 50.                                          
+   01 Profit2  PIC 9(4)  value 50.                                          
+   01 Profit3  PIC 9(4)  value 150.                                         
+   01 Result   PIC 9(4).                                                    
+                                                                            
+  PROCEDURE DIVISION.                                                       
+                                                                            
+   Display 'Profit1 value before any modification ' Profit1.                
+    Display 'Profit2 value before any modification ' Profit2.    
+    Display 'Profit3 value before any modification ' Profit3.    
+                                                                 
+    Subtract Profit1  Profit2  from Profit3 Giving Result.       
+                                                                 
+                                                                 
+    Display 'Result  Value after subtraction ' Result.           
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+ Stop Run.                                                       
