@@ -1,0 +1,25 @@
+  IDENTIFICATION DIVISION.                                                           
+    PROGRAM-ID. TestPgm67.                                                           
+    AUTHOR. Tech Sharmit.                                                            
+                                                                                     
+ *************************************************************************           
+ *                      Multiply Statement                               *           
+ *************************************************************************           
+                                                                                     
+ DATA DIVISION.                                                                      
+                                                                                     
+   WORKING-STORAGE SECTION.                                                          
+                                                                                     
+   01 Profit1 PIC 9(4) Value 5.                                                      
+   01 Profit2 PIC 9(4) Value 4.                                                      
+                                                                                     
+ PROCEDURE DIVISION.                                                                 
+                                                                                     
+ Display 'Profit1 value before any modification ' Profit1.                           
+ Display 'Profit2 value before any modificaiton ' Profit2.                           
+
+  MULTIPLY Profit1 By Profit2.                                                  
+                                                                                
+  Display 'Profit2 value after multiplication is performed ' Profit2.           
+                                                                                
+  Stop Run.                                                                     
