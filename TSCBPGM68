@@ -1,0 +1,28 @@
+IDENTIFICATION DIVISION.                                                               
+   PROGRAM-ID. TestPgm67.                                                              
+   AUTHOR. Tech Sharmit.                                                               
+                                                                                       
+************************************************************************               
+                            Multiply  Statement                        *               
+************************************************************************               
+                                                                                       
+DATA DIVISION.                                                                         
+                                                                                       
+  WORKING-STORAGE SECTION.                                                             
+    01 Profit1  PIC 9(4)  value 5.                                                     
+    01 Profit2  PIC 9(4)  value 4.                                                     
+    01 Profit3  PIC 9(4)  value 2.                                                     
+                                                                                       
+   PROCEDURE DIVISION.                                                                 
+                                                                                       
+    Display 'Profit1 value before any modification ' Profit1.                          
+    Display 'Profit2 value before any modification ' Profit2.                          
+  Display 'Profit3 value before any modification ' Profit3.                   
+                                                                              
+  Multiply Profit1  by Profit2 Profit3.                                       
+                                                                              
+  Display 'Multiplication Result           ' Profit2.                         
+                                                                              
+  Display 'Multiplication Result           ' Profit3.                         
+                                                                              
+  stop run.                                                                   
