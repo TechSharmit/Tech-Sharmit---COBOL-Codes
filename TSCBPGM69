@@ -1,0 +1,31 @@
+    IDENTIFICATION DIVISION.                                                   
+       PROGRAM-ID. TSCBPGM69.                                                  
+       AUTHOR. Tech Sharmit.                                                   
+                                                                               
+   *************************************************************************   
+   *                Multiply  Statement with giving                        *   
+   *************************************************************************   
+                                                                               
+    DATA DIVISION.                                                             
+      WORKING-STORAGE Section.                                                 
+                                                                               
+       01 Profit1 PIC 9(4) value 5.                                            
+       01 Profit2 PIC 9(4) value 4.                                            
+       01 Result  PIC 9(4).                                                    
+                                                                               
+    PROCEDURE DIVISION.                                                        
+                                                                               
+     Display 'Profit1 value before any modification ' Profit1.                
+
+     Display 'Profit2 value before any modification ' Profit2.              
+                                                                            
+     Multiply Profit1 by Profit2 Giving Result.                             
+                                                                            
+                                                                            
+     Display 'Profit2 value after  modification ' Profit2.                  
+                                                                            
+     Display 'Result : ' Result.                                            
+                                                                            
+                                                                            
+                                                                            
+   stop run.                                                                
