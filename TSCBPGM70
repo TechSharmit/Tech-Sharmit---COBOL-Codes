@@ -1,0 +1,29 @@
+       IDENTIFICATION DIVISION.                                                      
+          PROGRAM-ID. TSCBPGM70.                                                     
+          AUTHOR. Tech Sharmit.                                                      
+                                                                                     
+      *************************************************************************      
+      *                     Multiply  Statement with On Size Error            *      
+      *************************************************************************      
+                                                                                     
+       DATA DIVISION.                                                                
+         WORKING-STORAGE Section.                                                    
+           01 Profit1 PIC 9(3) value 5.                                              
+           01 Profit2 PIC 9(3) value 2.                                              
+           01 Result  PIC 9(3).                                                      
+                                                                                     
+       Procedure Division.                                                           
+                                                                                     
+         Display 'Profit1 value before any modification : ' Profit1.                 
+                                                                                     
+         Display 'Profit2 value before any modification : ' Profit2.                 
+                                                                                     
+         Multiply Profit1 by Profit2 Giving Result On Size Error                     
+                  Display 'Overflow Condition'.                                      
+                                                                                     
+         Display 'Result : ' Result.                                                 
+                                                                                     
+                                                                                     
+                                                                                     
+                                                                                     
+       stop run.                                                                     
