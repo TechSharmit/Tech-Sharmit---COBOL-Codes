@@ -1,0 +1,25 @@
+  IDENTIFICATION DIVISION.                                                  
+     PROGRAM-ID. TSCBPGM72.                                                 
+     AUTHOR. Tech Sharmit.                                                  
+                                                                            
+ *************************************************************************  
+ *                        Division with Remainder                        *  
+ *************************************************************************  
+                                                                            
+  DATA DIVISION.                                                            
+    Working-Storage Section.                                                
+      01 Profit1   PIC 9(3) Value 9.                                        
+      01 Profit2   PIC 9(3) Value 2.                                        
+      01 Rem       PIC 9(3).                                                
+      01 Result    PIC 9(3).                                                
+                                                                            
+  PROCEDURE DIVISION.                                                       
+    Display 'Profit1 value before any modification : ' Profit1.             
+    Display 'Profit2 value before any modification : ' Profit2.             
+
+   DIVIDE Profit1 By Profit2 Giving Result REMAINDER Rem.         
+                                                                  
+   Display ' Result : ' Result.                                   
+   Display ' Remainder : ' Rem.                                   
+                                                                  
+ Stop Run.                                                        
