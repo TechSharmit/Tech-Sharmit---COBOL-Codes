@@ -1,0 +1,24 @@
+     IDENTIFICATION DIVISION.                                                  
+        PROGRAM-ID. TSCBPGM73.                                                 
+        AUTHOR. Tech Sharmit.                                                  
+                                                                               
+    *************************************************************************  
+    *                       Division with On Size Error                     *  
+    *************************************************************************  
+                                                                               
+     Data Division.                                                            
+       Working-Storage Section.                                                
+         01 Profit1 PIC 9(3) Value 900.                                        
+         01 Profit2 PIC 9(3) Value 2.                                          
+         01 Profit3 PIC 9(3) Value 3.                                          
+         01 Result  PIC 9(3).                                                  
+                                                                               
+     Procedure Division.                                                       
+       Display 'Profit1 value before any modfication : ' Profit1.              
+       Display 'Profit2 value before any modfication : ' Profit2.              
+    Divide Profit1 By Profit2 Giving Result On Size Error      
+    Display 'Overflow Occured!'.                             
+                                                            
+    Display 'Result : ' Result.                                
+                                                            
+  Stop Run.                                                  
