@@ -1,0 +1,22 @@
+   IDENTIFICATION DIVISION.                                                   
+      PROGRAM-ID. TSCBPGM74.                                                  
+      AUTHOR. Tech Sharmit.                                                   
+                                                                              
+  *************************************************************************   
+  *                       Compute for Basic Addition                      *   
+  *************************************************************************   
+                                                                              
+   Data Division.                                                             
+     Working-Storage Section.                                                 
+       01 Profit1  PIC 9(3) Value 450.                                        
+       01 Profit2  PIC 9(3) Value 50.                                         
+       01 Result   PIC 9(3).                                                  
+                                                                              
+   Procedure Division.                                                        
+     Display 'Profit1 value before any modification : ' Profit1.              
+     Display 'Profit2 value before any modification : ' Profit2.              
+                                                                              
+     COMPUTE Result = Profit1 + Profit2.                                      
+     Display 'Result : ' Result.           
+                                         
+ Stop Run.                               
