@@ -1,0 +1,23 @@
+ IDENTIFICATION DIVISION.                                                    
+    PROGRAM-ID. TSCBPGM75.                                                   
+    AUTHOR. Tech Sharmit.                                                    
+                                                                             
+*************************************************************************    
+*                       Compute for Basic Subtraction                   *    
+*************************************************************************    
+                                                                             
+ Data Division.                                                              
+   Working-Storage Section.                                                  
+     01 Profit1  PIC 9(3) Value 400.                                         
+     01 Loss1    PIC 9(3) Value 50.                                          
+     01 Result   PIC 9(3).                                                   
+                                                                             
+   Procedure Division.                                                       
+     Display 'Profit1 value before any modification : ' Profit1.             
+     Display 'Loss1 value before any modification : ' Loss1.                 
+                                                                             
+   Compute Result = Profit1 - Loss1.                                         
+
+   Display 'Result : ' Result.          
+                                              
+   Stop Run.                              
