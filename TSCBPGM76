@@ -1,0 +1,22 @@
+  IDENTIFICATION DIVISION.                                                   
+     PROGRAM-ID. TSCBPGM75.                                                  
+     AUTHOR. Tech Sharmit.                                                   
+                                                                             
+ *************************************************************************   
+ *                       Compute for Basic Multiplication                *   
+ ************************************cobol********************************   
+                                                                             
+  Data Division.                                                             
+    Working-Storage Section.                                                 
+      01 Profit1  PIC 9(3) Value 5.                                          
+      01 Profit2  PIC 9(3) Value 4.                                          
+      01 Result   PIC 9(3).                                                  
+                                                                             
+  Procedure Division.                                                        
+    Display 'Profit1 value before any modification : ' Profit1.              
+    Display 'Profit2 value before any modification : ' Profit2.              
+                                                                             
+    Compute Result = Profit1 * Profit2.                                      
+    Display 'Multiplication Result : ' Result.    
+                                                    
+Stop Run.                                       
