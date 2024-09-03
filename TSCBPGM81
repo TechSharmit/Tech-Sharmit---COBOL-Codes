@@ -1,0 +1,22 @@
+ IDENTIFICATION DIVISION.                                                    
+    PROGRAM-ID. TSCBPGM81.                                                   
+    AUTHOR. Tech Sharmit.                                                    
+                                                                             
+*************************************************************************    
+*               Redefining a Numeric Field as Alphanumeric              *    
+*************************************************************************    
+                                                                             
+ Data Division.                                                              
+   Working-Storage Section.                                                  
+     01 Field1  PIC 9(3).                                                    
+     01 Field2 REDEFINES Field1 PIC X(3).                                    
+                                                                             
+                                                                             
+  Procedure Division.                                                        
+    Move 123 to Field1.                                                      
+    Display 'Field1 Value : ' Field1.                                        
+                                                                             
+    Move "ABC" to Field2.                                                    
+     Display 'Field2 Value : ' Field2.        
+                                              
+  Stop Run.                                   
