@@ -1,0 +1,25 @@
+  IDENTIFICATION DIVISION.                                                       
+     PROGRAM-ID. TSCBPGM82.                                                      
+     AUTHOR. Tech Sharmit.                                                       
+                                                                                 
+ *************************************************************************       
+ *               Redefining a Group Item as a Single Field               *       
+ *************************************************************************       
+                                                                                 
+  Data Division.                                                                 
+    Working-Storage Section.                                                     
+      01 WS-Date.                                                                
+         05  WS-Year  PIC 9(4) Value 2024.                                       
+         05  WS-Month PIC 9(2) Value 09.                                         
+         05  WS-Day   PIC 9(2) Value 04.                                         
+                                                                                 
+      01 WS-Date-Full Redefines WS-Date  PIC 9(8).                               
+                                                                                 
+  Procedure Division.                                                            
+    Display Ws-Year.            
+    Display Ws-Month.                       
+    Display Ws-Day.                         
+                                              
+    Display Ws-Date-Full.                   
+                                              
+  Stop Run.                                 
