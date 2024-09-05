@@ -1,0 +1,19 @@
+   IDENTIFICATION DIVISION.                                                 
+      PROGRAM-ID. TSCBPGM83.                                                
+      AUTHOR. Tech Sharmit.                                                 
+                                                                            
+  ************************************************************************* 
+  *      Redefining an Alphanumeric Field as Multiple Smaller Fields      * 
+  ************************************************************************* 
+   Data Division.                                                           
+     Working-Storage Section.                                               
+       01 WS-NAME   PIC  X(10) Value 'abcdxyzpqr'.                          
+       01 Ws-Name-Parts Redefines Ws-Name.                                  
+          05 Ws-First-Name  PIC X(5).                                       
+          05 Ws-Last-Name   PIC X(5).                                       
+                                                                            
+   Procedure Division.                                                      
+     Display Ws-Name.                                                       
+     Display Ws-First-Name.                                                 
+     Display Ws-Last-Name.        
+   Stop Run. 
