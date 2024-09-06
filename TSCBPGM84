@@ -1,0 +1,26 @@
+    IDENTIFICATION DIVISION.                                                       
+       PROGRAM-ID. TSCBPGM84.                                                      
+       AUTHOR. Tech Sharmit.                                                       
+                                                                                   
+   *************************************************************************       
+   *                 Renames Clause - Combining Two Fields into One        *       
+   *************************************************************************       
+                                                                                   
+    Data Division.                                                                 
+      Working-Storage Section.                                                     
+        01 Ws-Old.                                                                 
+           10 Ws-A PIC 9(2) Value 20.                                              
+           10 Ws-B PIC X(2) Value 'AB'.                                            
+           10 Ws-C PIC A(2) Value 'CD'.                                            
+           10 Ws-D PIC X(2) Value 'XY'.                                            
+                                                                                   
+        66 Ws-New RENAMES WS-A THRU WS-D.                                          
+                                                                                   
+    Procedure Division.                                                            
+       Display Ws-New.                
+       Display Ws-A.                  
+       Display Ws-B.                  
+       Display Ws-C.                  
+       Display Ws-D.                  
+                                      
+     Stop Run.                        
