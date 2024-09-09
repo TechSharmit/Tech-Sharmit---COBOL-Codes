@@ -1,0 +1,17 @@
+  IDENTIFICATION DIVISION.                                                
+     PROGRAM-ID. TSCBPGM86.                                               
+     AUTHOR. Tech Sharmit.                                                
+                                                                          
+ *************************************************************************
+ *                         Usage Clause - COMP                           *
+ *************************************************************************
+  Data Division.                                                          
+    Working-Storage Section.                                              
+      01 Age PIC 9(2) Usage COMP.                                         
+                                                                          
+    Procedure Division.                                                   
+      Move 21 To Age.                                                     
+                                                                          
+      Display Age.                                                        
+                                                                          
+  Stop Run.                                                               
