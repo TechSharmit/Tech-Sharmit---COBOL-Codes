@@ -1,0 +1,20 @@
+ IDENTIFICATION DIVISION.                                                          
+    PROGRAM-ID. TSCBPGM84.                                                         
+    AUTHOR. Tech Sharmit.                                                          
+                                                                                   
+*************************************************************************          
+*                         Usage Clause - Display                        *          
+*************************************************************************          
+                                                                                   
+ Data Division.                                                                    
+   Working-Storage Section.                                                        
+     01 Name PIC  X(10) USAGE DISPLAY.                                             
+     01 Age  PIC  9(2)  USAGE DISPLAY.                                             
+                                                                                   
+ Procedure Division.                                                               
+   MOVE 'Sharmit' To Name.                                                         
+   MOVE 25 To Age.                                                                 
+                                                                                   
+   Display 'Name: ' Name.                                                          
+   Display 'Age: ' Age.                                                            
+Stop Run.     
