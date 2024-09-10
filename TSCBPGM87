@@ -1,0 +1,17 @@
+       IDENTIFICATION DIVISION.                                                              
+          PROGRAM-ID. TSCBPGM87.                                                             
+          AUTHOR. Tech Sharmit.                                                              
+                                                                                             
+      *************************************************************************              
+      *                         Usage Clause - COMP-3                         *              
+      *************************************************************************              
+                                                                                             
+       Data Division.                                                                        
+         Working-Storage Section.                                                            
+           01 MyVar PIC 9(6)V99 USAGE COMP-3.                                                
+                                                                                             
+       Procedure Division.                                                                   
+         Move 21 Myvar.                                                                      
+         Display MyVar.                                                                      
+                                                                                             
+       Stop Run.                                                                             
