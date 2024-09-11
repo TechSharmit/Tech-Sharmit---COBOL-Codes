@@ -1,0 +1,20 @@
+  IDENTIFICATION DIVISION.                                                   
+     PROGRAM-ID. TSCBPGM88.                                                  
+     AUTHOR. Tech Sharmit.                                                   
+                                                                             
+ *************************************************************************   
+ *            USAGE COMP-1 (Single Precision Floating Point)             *   
+ *************************************************************************   
+                                                                             
+                                                                             
+  Data Division.                                                             
+    01 Var1 USAGE COMP-1.                                                    
+                                                                             
+  Procedure Division.                                                        
+                                                                             
+    Display 'Var1 value before any modification : ' Var1.                    
+                                                                             
+    Move 1.5 Var1.                                                           
+                                                                             
+    Display 'Var1 value after modification : ' Var1.                         
+  Stop Run.     
