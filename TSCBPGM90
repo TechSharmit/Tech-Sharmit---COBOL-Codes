@@ -1,0 +1,44 @@
+  IDENTIFICATION DIVISION.                                                     
+     PROGRAM-ID. TSCBPGM90.                                                    
+     AUTHOR. Tech Sharmit.                                                     
+                                                                               
+ *************************************************************************     
+ *                   Simple One-Dimensional Table                        *     
+ *************************************************************************     
+                                                                               
+  Data Division.                                                               
+    Working-Storage Section.                                                   
+      01 Months-Table.                                                         
+         05 Month-Name PIC X(10) OCCURS 12 Times.                              
+                                                                               
+  Procedure Division.                                                          
+                                                                               
+    Move "January"       To Month-Name(1).                                     
+    Move "February"      To Month-Name(2).                                     
+    Move "March"         To Month-Name(3).                                     
+    Move "April"         To Month-Name(4).                                     
+
+  Move "May"           To Month-Name(5).              
+  Move "June"          To Month-Name(6).              
+  Move "July"          To Month-Name(7).              
+  Move "August"        To Month-Name(8).              
+  Move "September"     To Month-Name(9).              
+  Move "October"       To Month-Name(10).             
+  Move "November"      To Month-Name(11).             
+  Move "December"      To Month-Name(12).             
+                                                      
+  Display  Month-Name(1).                             
+  Display  Month-Name(2).                             
+  Display  Month-Name(3).                             
+  Display  Month-Name(4).                             
+  Display  Month-Name(5).                             
+  Display  Month-Name(6).                             
+  Display  Month-Name(7).                             
+  Display  Month-Name(8).                             
+  Display  Month-Name(9).                             
+  Display  Month-Name(10).                            
+
+   Display  Month-Name(11).          
+   Display  Month-Name(12).          
+                                     
+ Stop Run.                           
