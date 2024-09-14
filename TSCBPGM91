@@ -1,0 +1,29 @@
+  IDENTIFICATION DIVISION.                                                   
+     PROGRAM-ID. TSCBPGM91.                                                  
+     AUTHOR. Tech Sharmit.                                                   
+                                                                             
+ *************************************************************************   
+ *                        Two-Dimensional Table                          *   
+ *************************************************************************   
+                                                                             
+  Data Division.                                                             
+    Working-Storage Section.                                                 
+                                                                             
+      01 Grades-Table.                                                       
+         05 Student-Grade OCCURS 2 Times.                                    
+            10 Subject-Grade PIC 9(2) Occurs 2 Times.                        
+                                                                             
+  Procedure Division.                                                        
+    Move 80 To Subject-Grade (1,1).                                          
+    Move 85 To Subject-Grade (1,2).                                          
+          Move 70 To Subject-Grade (2,1).                                          
+          Move 75 To Subject-Grade (2,2).                                          
+                                                                                   
+          Display "Student 1, Subject 1 Grade : " Subject-Grade(1,1).              
+          Display "Student 1, Subject 2 Grade : " Subject-Grade(1,2).              
+                                                                                   
+                                                                                   
+          Display "Student 2, Subject 1 Grade : " Subject-Grade(2,1).              
+          Display "Student 2, Subject 2 Grade : " Subject-Grade(2,2).              
+                                                                                   
+        Stop Run.                                                                  
