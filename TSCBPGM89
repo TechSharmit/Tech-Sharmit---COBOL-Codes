@@ -1,0 +1,20 @@
+ IDENTIFICATION DIVISION.                                                        
+    PROGRAM-ID. TSCBPGM89.                                                       
+    AUTHOR. Tech Sharmit.                                                        
+                                                                                 
+*************************************************************************        
+*                           USAGE BINARY                                *        
+*************************************************************************        
+                                                                                 
+ Data Division.                                                                  
+   Working-Storage Section.                                                      
+     01 Var1 PIC S9(4) USAGE BINARY.                                             
+                                                                                 
+ Procedure Division.                                                             
+                                                                                 
+ Display 'Var1 value before any modification : ' Var1.                           
+                                                                                 
+ Move 5 Var1.                                                                    
+                                                                                 
+ Display 'Var1 value after modification : ' Var1.                                
+ Stop Run.        
