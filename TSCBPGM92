@@ -1,0 +1,28 @@
+ IDENTIFICATION DIVISION.                                                      
+    PROGRAM-ID. TSCBPGM92.                                                     
+    AUTHOR. Tech Sharmit.                                                      
+                                                                               
+*************************************************************************      
+*                        Table with Indexing                            *      
+*************************************************************************      
+                                                                               
+ Data Division.                                                                
+   Working-Storage Section.                                                    
+     01 Employee-Table.                                                        
+        05 Emp-Name PIC X(20) OCCURS 100 TIMES INDEXED By EMP-Index.           
+     01 Emp-Subscript PIC 9(3).                                                
+                                                                               
+ Procedure Division.                                                           
+                                                                               
+                                                                               
+    Move 1 to Emp-Subscript.                                                   
+    MOVE "John Smith 1" TO EMP-NAME(Emp-Subscript).                            
+      Move 2 to Emp-Subscript.                                   
+      MOVE "John Smith 2" TO EMP-NAME(Emp-Subscript).            
+                                                                 
+      Move 3 to Emp-Subscript.                                   
+      MOVE "John Smith 3" TO EMP-NAME(Emp-Subscript).            
+                                                                 
+      Display Emp-Name(Emp-Subscript).                           
+                                                                 
+     STOP RUN.                                                   
