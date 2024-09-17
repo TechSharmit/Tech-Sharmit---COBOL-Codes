@@ -1,0 +1,25 @@
+ IDENTIFICATION DIVISION.                                                    
+    PROGRAM-ID. TSCBPGM94.                                                   
+    AUTHOR. Tech Sharmit.                                                    
+                                                                             
+*************************************************************************    
+*                      Table with Set Statement                         *    
+*************************************************************************    
+                                                                             
+ Data Division.                                                              
+   Working-Storage Section.                                                  
+     01 Names-Table.                                                         
+        05 Name-Entry PIC X(10) OCCURS 2 TIMES INDEXED BY IDX.               
+                                                                             
+ Procedure Division.                                                         
+                                                                             
+   Move 'Sharmit' To Name-Entry(1).                                          
+   Move 'Amit'    To Name-Entry(2).                                          
+                                                                             
+   Set IDX to 1.                                                             
+         Display Name-Entry(IDX).           
+                                            
+         Set Idx up by 1.                   
+         Display Name-Entry(Idx).           
+                                            
+         STOP RUN.                          
