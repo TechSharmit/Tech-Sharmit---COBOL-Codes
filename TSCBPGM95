@@ -1,0 +1,25 @@
+  IDENTIFICATION DIVISION.                                                 
+     PROGRAM-ID. TSCBPGM95.                                                
+     AUTHOR. Tech Sharmit.                                                 
+                                                                           
+ ************************************************************************* 
+ *                      Table with Search Statement                      * 
+ ************************************************************************* 
+                                                                           
+  Data Division.                                                           
+    Working-Storage Section.                                               
+      01 Ws-Table.                                                         
+         05 Ws-A PIC X(1) OCCURS 10 Times Indexed By I.                    
+      01  Ws-Srch PIC A(1) Value 'F'.                                      
+                                                                           
+  Procedure Division.                                                      
+    Move 'ABCDEFGHIJ'  To Ws-Table.                                        
+      Set I To 1.                                                          
+        Search Ws-A                                                        
+          At End Display  'F Not Found In Table'                           
+
+          When Ws-A(I) = Ws-Srch                            
+             Display 'Letter F Found In Table'              
+          End-Search.                                       
+                                                            
+    STOP RUN.                                               
