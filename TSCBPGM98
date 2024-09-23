@@ -1,0 +1,48 @@
+  IDENTIFICATION DIVISION.                                                         
+     PROGRAM-ID. TSCBPGM98.                                                        
+     AUTHOR. Tech Sharmit.                                                         
+                                                                                   
+ *************************************************************************         
+ *                  Reading Physical File in Cobol Program               *         
+ *************************************************************************         
+                                                                                   
+                                                                                   
+  Environment Division.                                                            
+  Input-Output Section.                                                            
+  File-Control.                                                                    
+       Select Employee-File Assign To Database-Emppf1                              
+              Organization is Sequential                                           
+              File status is Ws-File-Status.                                       
+                                                                                   
+  Data Division.                                                                   
+       File Section.                                                               
+       FD Employee-File.                                                           
+         01 Employee-Record.                                     
+            05 EMPID PIC 9(2).                                   
+            05 EMPNAME PIC X(15).                                
+    Working-Storage Section.                                     
+         01 Ws-File-Status PIC X(2).                             
+         01 Ws-Eof         PIC X(1) Value 'N'.                   
+                                                                 
+    Procedure Division.                                          
+      Open-File.                                                 
+         Open Input Employee-File.                               
+                                                                 
+         If Ws-File-Status Not = "00"                            
+            Display "Error Openinig Employee File"               
+            Display Ws-File-Status                               
+         End-If.                                                 
+                                                                 
+    Perform Until Ws-Eof = 'Y'                                   
+                  Read Employee-File                             
+                     At End                                      
+                            Move 'Y' To Ws-Eof                          
+                       Not At End                                       
+                            Display 'Employee Id : ' EMPID              
+                            Display 'Employee Name : ' EMPNAME          
+                    End-Read                                            
+      End-Perform.                                                      
+                                                                        
+      Close Employee-File.                                              
+                                                                        
+      STOP RUN.                                                         
