@@ -1,0 +1,32 @@
+     IDENTIFICATION DIVISION.                                                           
+        PROGRAM-ID. TSCBPGM97.                                                          
+        AUTHOR. Tech Sharmit.                                                           
+                                                                                        
+    *************************************************************************           
+    *                Declaring Physical File in Cobol Program               *           
+    *************************************************************************           
+                                                                                        
+                                                                                        
+     Environment Division.                                                              
+     Input-Output Section.                                                              
+     File-Control.                                                                      
+          Select Employee-File Assign To Database-Emppf1                                
+                 Organization is Sequential                                             
+                 File status is Ws-File-Status.                                         
+                                                                                        
+     Data Division.                                                                     
+          File Section.                                                                 
+          FD Employee-File.                                                             
+
+        01 Employee-Record.                             
+           05 EMPID PIC 9(2).                           
+           05 EMPNAME PIC X(15).                        
+   Working-Storage Section.                             
+        01 Ws-File-Status PIC X(2).                     
+        01 Ws-Eof         PIC X(1) Value 'N'.           
+                                                        
+   Procedure Division.                                  
+                                                        
+     Display 'File is declared'.                        
+                                                        
+   STOP RUN.                                            
