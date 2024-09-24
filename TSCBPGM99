@@ -1,0 +1,47 @@
+   IDENTIFICATION DIVISION.                                                               
+      PROGRAM-ID. TSCBPGM99.                                                              
+      AUTHOR. Tech Sharmit.                                                               
+                                                                                          
+  *************************************************************************               
+  *                Writing Record in Physical File                        *               
+  *************************************************************************               
+                                                                                          
+   Environment Division.                                                                  
+   Input-Output Section.                                                                  
+   File-Control.                                                                          
+        SELECT EMPLOYEE-FILE ASSIGN TO Database-EMPPF2                                    
+            ORGANIZATION IS Sequential                                                    
+            File Status is Ws-File-Status.                                                
+                                                                                          
+   Data Division.                                                                         
+        File Section.                                                                     
+        FD Employee-File.                                                                 
+        01 Employee-Record.                                                               
+             05 EMPID PIC 9(2).                             
+             05 EMPNAME PIC X(15).                          
+                                                            
+     Working-Storage Section.                               
+          01 Ws-File-Status PIC X(2).                       
+                                                            
+     Procedure Division.                                    
+          OPEN OUTPUT EMPLOYEE-FILE.                        
+                                                            
+          If Ws-File-Status Not = "00"                      
+             Display "Error Openinig Employee File"         
+             Display Ws-File-Status                         
+          End-If.                                           
+                                                            
+          Move 11 To EMPID.                                 
+          Move 'Sharmit' To EMPNAME.                        
+                                                            
+          WRITE Employee-Record.                            
+           If Ws-File-Status  = "00"                     
+              Display "Record Inserted"                  
+           Else                                          
+              Display "Error while writing record"       
+              Display Ws-File-Status                     
+           End-If.                                       
+                                                         
+      Close Employee-File.                               
+                                                         
+      STOP RUN.                                          
